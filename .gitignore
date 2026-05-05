@@ -1,7 +1,30 @@
-.DS_Store
-.env
-/node_modules/
+# Dependencies
+node_modules/
 
-# React Router
-/.react-router/
+# Build outputs
 /build/
+/dist/
+/.react-router/
+/.vite/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing / coverage
+coverage/
