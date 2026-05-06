@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { useState } from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -41,8 +42,22 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+const DEFAULT_AUTH_STATE: AuthState = {
+  isSignedIn: false,
+  userName: null,
+  userId: null,
+};
+
 export default function App() {
-  return <Outlet />;
+  const [authState] = useState<AuthState>(DEFAULT_AUTH_STATE);
+
+  const refreshAuth = async () => false;
+  const signIn = async () => false;
+  const signOut = async () => false;
+
+  return (
+    <Outlet context={{ ...authState, refreshAuth, signIn, signOut }} />
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
