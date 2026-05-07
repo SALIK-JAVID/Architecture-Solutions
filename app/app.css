@@ -1,15 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-    --color-background: #fdfbf7;
-    --color-foreground: #1a1a1a;
+    --color-background: #ffffff;
+    --color-background-alt: #f8f9fc;
+    --color-foreground: #0f172a;
     --color-surface: #ffffff;
-    --color-surface-highlight: #f3f4f6;
-    --color-primary: #f97316;
-    --color-secondary: #3b82f6;
-    --color-accent: #8b5cf6;
-    --font-serif: "Instrument Serif", serif;
+    --color-surface-highlight: #f1f5f9;
+    --color-border: #e2e8f0;
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-accent: #6366f1;
+    --color-text-secondary: #64748b;
+    --color-text-label: #94a3b8;
+    --font-serif: "Plus Jakarta Sans", sans-serif;
     --font-sans: Inter, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
     --shadow-neobrutalism: 4px 4px 0px 0px rgba(0, 0, 0, 1);
 }
 
@@ -19,8 +24,8 @@
     }
 
     body {
-        background-color: #fdfbf7;
-        color: #1a1a1a;
+        background-color: #ffffff;
+        color: #0f172a;
         font-family: Inter, sans-serif;
         -webkit-font-smoothing: antialiased;
     }
@@ -31,7 +36,7 @@
     h4,
     h5,
     h6 {
-        font-family: "Instrument Serif", serif;
+        font-family: "Plus Jakarta Sans", sans-serif;
     }
 
     /* Custom Scrollbar */
@@ -41,7 +46,7 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: #fdfbf7;
+        background: #f8f9fc;
     }
 
     ::-webkit-scrollbar-thumb {

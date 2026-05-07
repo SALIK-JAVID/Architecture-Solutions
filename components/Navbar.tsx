@@ -31,7 +31,7 @@ const Navbar = () => {
                         <Box  className="logo" />
 
                         <span className="name">
-                            Architectural Solutions
+                            Vision Arch AI
                         </span>
                     </div>
 
