@@ -1,8 +1,18 @@
 <div align="center">
 
-<img src="public/readme/floorplan-to-3d.jpg" alt="A 2D floor plan turning into a fully furnished, photorealistic 3D render" width="520" />
+<a href="public/readme/demo.mp4">
+  <img src="public/readme/demo.gif" alt="A 2D floor plan transforming into a walkthrough of a furnished 3D home" width="720" />
+</a>
 
-# Vision Arch AI
+<sub>🎬 <i>From a flat 2D plan to a walkable 3D space. <a href="public/readme/demo.mp4">Watch the full-quality video</a></i></sub>
+
+<br /><br />
+
+<img src="public/readme/floorplan-to-3d.jpg" alt="Line drawing to 3D model to finished photorealistic render" width="460" />
+
+<sub><i>Drawing → 3D model → photorealistic render</i></sub>
+
+# Architecture Solutions
 
 ### Turn 2D architectural drawings into photorealistic 3D renders, powered by Google Gemini
 
@@ -28,14 +38,13 @@
 
 > [!IMPORTANT]
 > **🚧 This project is under active development.**
-> I'm building Vision Arch AI right now, and it is **not finished yet**. The foundation is done: the app shell, authentication, design system, and landing page. The core AI rendering pipeline is the part I'm working on now. See the [Roadmap](#-roadmap) for what's done and what's next.
+> I'm building Architecture Solutions right now, and it is **not finished yet**. The foundation is done: the app shell, authentication, design system, and landing page. The core AI rendering pipeline is the part I'm working on now. See the [Roadmap](#-roadmap) for what's done and what's next.
 
 ---
 
 ## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
-- [Demo](#-demo)
 - [How It Works](#-how-it-works)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
@@ -51,23 +60,9 @@
 
 Architects, interior designers, and homeowners often work from **flat 2D floor plans**: CAD exports, scanned blueprints, or hand sketches. These drawings are precise, but most clients find them hard to picture.
 
-**Vision Arch AI** closes that gap. You upload a floor plan image, and the app sends it to **Google Gemini's image model** with a carefully engineered architectural prompt. You get back a **clean, photorealistic 3D visualization** of the same space, with real walls, doors, windows, flooring, and furniture.
+**Architecture Solutions** closes that gap. You upload a floor plan image, and the app sends it to **Google Gemini's image model** with a carefully engineered architectural prompt. You get back a **clean, photorealistic 3D visualization** of the same space, with real walls, doors, windows, flooring, and furniture.
 
 The goal is a fast, free SaaS that lets anyone go from **drawing to render in seconds**, with no 3D modelling skills or expensive software.
-
----
-
-## 🎬 Demo
-
-<div align="center">
-
-<a href="public/readme/demo.mp4">
-  <img src="public/readme/floorplan-to-3d.jpg" alt="Watch the demo video" width="360" />
-</a>
-
-**▶️ [Watch the demo video](public/readme/demo.mp4)**
-
-</div>
 
 ---
 
@@ -217,8 +212,8 @@ The app runs at **http://localhost:5173**.
 ## 🐳 Deployment
 
 ```bash
-docker build -t vision-arch-ai .
-docker run -p 3000:3000 vision-arch-ai
+docker build -t architecture-solutions .
+docker run -p 3000:3000 architecture-solutions
 ```
 
 The container runs on any Docker host, such as AWS ECS, Google Cloud Run, Fly.io, or Railway.
